@@ -1,6 +1,6 @@
 # ArchShell
 
-**ArchShell** is a lightweight, custom shell built in C, designed to work on Arch Linux or any Linux-based system. It supports basic shell functionality, built-in commands, piping, and file redirection.
+**ArchShell** is a lightweight, custom shell built in C, designed to work on Arch Linux or any Linux-based system. It supports basic shell functionality, built-in commands, piping, file redirection, and now **Python scripting** for dynamic extensions.
 
 ---
 
@@ -28,8 +28,21 @@
 6. **Command History**:
    - Keeps track of up to 100 commands during the session.
 
-7. **Signal Handling**:
+7. **Python Scripting**:
+   - Execute Python scripts directly from the shell by providing the script's filename. The Python interpreter is embedded into the shell.
+
+8. **Signal Handling**:
    - Prevents accidental termination via `Ctrl+C`.
+
+---
+
+## Requirements
+
+To compile the shell, ensure you have `gcc` and Python development libraries installed. On Arch Linux, install them with:
+
+```bash
+sudo pacman -S gcc python python-devel
+
 
 ---
 
